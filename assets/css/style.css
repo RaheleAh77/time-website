@@ -1,0 +1,275 @@
+@font-face {
+  font-family: "iransans";
+  src: url("../css/font/IRAN\ Sans\ Regular.ttf") format("truetype");
+}
+
+strong.fs-1 {
+  font-family: "Glyphicons Halflings";
+}
+
+.container {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body.light {
+  background-color: #e6e6e6;
+}
+
+body.dark {
+  background-color: #26292b;
+  color: #fff;
+}
+
+:root {
+  --bs-link-hover-color: #d04514;
+}
+
+/* بخش هدر */
+.header {
+  background-image: url("../image/time/91_orig.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 15vh;
+}
+
+.header-btn {
+  width: 80px;
+  height: 40px;
+}
+
+.header-btn > .toggle-box {
+  width: 3.5rem;
+  height: 1.5rem;
+}
+
+.header-btn .circle-toggle {
+  transition: all 0.3s;
+}
+
+body.light .circle-toggle {
+  transform: translateX(-1.9rem);
+  cursor: pointer;
+}
+
+body.dark .circle-toggle {
+  transform: translateX(0px);
+  cursor: pointer;
+}
+
+body.light .date-clock-container {
+  background-color: white;
+}
+
+body.dark .date-clock-container {
+  background-color: #181a1b;
+}
+
+
+
+.wrapper-text,
+.sharei {
+  font-family: "iransans";
+}
+
+.sharei {
+  padding: 20px;
+}
+
+.sharei-text {
+  border-color: #d2d2d2;
+  font-weight: 700;
+}
+
+body.light .date {
+  background-color: #dc3545;
+}
+
+body.dark .date {
+  background-color: #26292b;
+}
+
+.horizontal-rule {
+  background-color: #eee;
+}
+
+select {
+  border-color: #d2d2d2;
+}
+
+select:focus {
+  outline: 1px solid red;
+}
+
+span.material-symbols-outlined {
+  color: #d04514;
+  vertical-align: middle;
+}
+
+button {
+  text-wrap: nowrap;
+}
+
+p.fw-bold {
+  margin-right: 80px;
+}
+
+body.light .callender {
+  background-color: #f8f8f8;
+}
+
+body.dark .callender {
+  background-color: #1c1e1f;
+}
+
+body.light .calend {
+  background-color: white;
+}
+
+body.dark .calend {
+  background-color: #181a1b;
+}
+
+body.light .date-coercion {
+  background-color: white;
+}
+
+body.dark .date-coercion {
+  background-color: #1c1e1f;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.kind-year {
+  padding-inline: 3rem !important;
+}
+
+body.light .kind-year {
+  background-color: #e6e6e6;
+}
+
+body.dark .kind-year {
+  background-color: #1e2021;
+}
+
+.grey {
+  background-color: #e6e6e6;
+}
+
+body.light .titr {
+  background: rgb(204, 204, 204);
+  color: #666;
+}
+
+body.dark .titr {
+  background-color: #35393b;
+  color: #dc3545;
+}
+
+.titr-2 {
+  width: 450px;
+  margin: 0 auto;
+}
+
+body.light .titr-2 {
+  color: #666;
+}
+
+body.dark .titr-2 {
+  color: white;
+}
+
+body.light .aplication {
+  background-color: white;
+}
+
+body.dark .aplication {
+  background-color: #181a1b;
+}
+
+.aplication a {
+  width: 230px;
+}
+
+body.light .aplication > div {
+  background-color: #e6e6e6;
+}
+
+body.dark .aplication > div {
+  background-color: #26292b;
+}
+
+ul {
+  list-style: none;
+}
+
+a.rounded-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 45%;
+  top: -20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+li > span {
+  display: inline-block;
+  background-color: gray;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .paragraph {
+    border-bottom: 1px solid rgba(243, 237, 237, 0.3);
+  }
+
+  .forth::before {
+    content: "\275D";
+    font-family: "Glyphicons Halflings";
+    font-size: 120px;
+    color: #c6c6c6;
+    display: inline;
+    position: absolute;
+    top: -20px;
+    right: 10px;
+    vertical-align: middle;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .kind-year {
+    padding-inline: 9rem !important;
+  }
+
+  body.dark .kind-year > div:not(div:last-child) {
+    border-left: 1px solid white;
+  }
+  body.light .kind-year > div:not(div:last-child) {
+    border-left: 1px solid black;
+  }
+}
+
+/* @media screen and (min-width:1200px){
+    .container{
+        max-width: 1140px;
+    }
+}
+
+@media screen and (min-width:1400px){
+    .container{
+        max-width: 1320px;
+    }
+} */
