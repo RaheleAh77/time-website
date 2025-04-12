@@ -1,0 +1,163 @@
+@font-face {
+    font-family: 'iransans';
+    src: url('../css/font/IRAN\ Sans\ Regular.ttf') format('truetype');
+}
+
+strong.fs-1 {
+    font-family: 'Glyphicons Halflings';
+}
+
+.container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #E6E6E6;
+}
+
+:root{
+    --bs-link-hover-color:#d04514;
+}
+
+/* بخش هدر */
+.header {
+    background-image: url('../image/time/91_orig.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 15vh;
+}
+
+.header-btn {
+    width: 75px;
+    height: 40px;
+}
+
+.header-btn>span {
+    width: 3rem;
+    height: 1.5rem;
+}
+
+.wrapper-text,
+.sharei {
+    font-family: 'iransans';
+}
+
+.sharei {
+    padding: 20px;
+}
+
+.sharei-text {
+    border-color: #d2d2d2;
+    font-weight: 700;
+}
+
+select {
+    border-color: #d2d2d2;
+}
+
+select:focus {
+    outline: 1px solid red;
+}
+
+span.material-symbols-outlined {
+    color: #D04514;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+p.fw-bold {
+    margin-right: 80px;
+}
+
+.callender{
+    background-color: #f8f8f8;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.kind-year{
+    background-color: #e6e6e6;
+}
+
+.grey{
+    background-color: #e6e6e6;
+}
+
+.titr{
+   background:rgb(204, 204, 204);
+    color: #666;
+}
+
+.titr-2{
+    color: #666;
+    width: 450px;
+    margin: 0 auto;
+}
+
+.aplication a{
+    width: 230px;
+}
+
+a.rounded-circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    left: 45%;
+    top: -20px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+li>span{
+    display: inline-block;
+    background-color: gray;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+
+@media screen and (min-width:768px) {
+    .paragraph {
+        border-bottom: 1px solid rgba(243, 237, 237, 0.3);
+    }
+
+    .forth::before {
+        content: "\275D";
+        font-family: 'Glyphicons Halflings';
+        font-size: 120px;
+        color: #c6c6c6;
+        display: inline;
+        position: absolute;
+        top: -20px;
+        right: 10px;
+        vertical-align: middle;
+    }
+}
+
+/* @media screen and (min-width:992px){
+    .container{
+        max-width: 960px;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .container{
+        max-width: 1140px;
+    }
+}
+
+@media screen and (min-width:1400px){
+    .container{
+        max-width: 1320px;
+    }
+} */
