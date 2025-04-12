@@ -142,9 +142,10 @@ select:focus {
   outline: 1px solid red;
 }
 
-span.material-symbols-outlined {
+:is(.right, .left) .material-symbols-outlined {
   color: #d04514;
   vertical-align: middle;
+  margin-left: 10px;
 }
 
 button {
