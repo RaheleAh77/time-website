@@ -34,8 +34,12 @@
       <div class="row x-lg-5 g-0 rounded-3 date-clock-container mx-md-5">
         <div
           class="col-12 col-lg-6 order-lg-2 clock d-flex flex-column justify-content-center align-items-center p-3 justify-content-lg-start mt-lg-5">
-          <img src="assets/image/time/clock.png" alt="clock" />
-          <strong class="fs-1"> <time class="ms-2">16:00:13</time>PM</strong>
+          <div id="clockContainer">
+            <div id="hour"></div>
+            <div id="minute"></div>
+            <div id="second"></div>
+          </div>
+          <strong class="fs-1"> <time id="digitalTime" class="ms-2">16:00:13</time>PM </strong>
         </div>
         <div class="wrapper col-12 order-lg-1 row g-0 pt-lg-3" style="padding: 0 15px">
           <div

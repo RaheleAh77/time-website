@@ -37,3 +37,30 @@ function getColor() {
   }
   updateIcon(); // Update the icon based on the applied theme
 }
+
+// clock
+
+setInterval(() => {
+  const d = new Date();
+  const hr = d.getHours();
+  const min = d.getMinutes();
+  const sec = d.getSeconds();
+
+  // Calculate rotations for clock hands
+  const hr_rotation = 30 * hr + min / 2;
+  const min_rotation = 6 * min;
+  const sec_rotation = 6 * sec;
+
+  // Update clock hand rotations
+  document.getElementById("hour").style.transform = `rotate(${hr_rotation}deg)`;
+  document.getElementById("minute").style.transform = `rotate(${min_rotation}deg)`;
+  document.getElementById("second").style.transform = `rotate(${sec_rotation}deg)`;
+
+  // Format time for digital display
+  const formattedTime = `${String(hr).padStart(2, "0")}:${String(min).padStart(2, "0")}:${String(
+    sec
+  ).padStart(2, "0")}`;
+
+  // Update the <time> element with the current time
+  document.getElementById("digitalTime").textContent = formattedTime;
+}, 1000);
